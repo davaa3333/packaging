@@ -1,4 +1,20 @@
 
+# Build the package
+1. Goto Project directory and install dependencies
+`pip install -r requirements.txt`
+2. create Pickle file after training:
+`python prediction_model/training_pipline.py`
+3. Create source distribution and wheel
+`python setup.py sdist bdist_wheel`
+
+# installation of Package
+go to project directory where `setup.py` file is located
+1. To install it in editable or developer mode
+
+```python
+pip install -e .
+```
+
 
 ## Virtual Environment
 Install virtualenv
